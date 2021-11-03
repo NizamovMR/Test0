@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        "use strict";
+        
+        let userName = prompt ('Как вас зовут', '' );
+        if (userName == '' || userName == null )   {
+            alert ("Отмена"); }            
+        let healtQ11 = prompt ('Беспокоит ли вас ваше здоровье, ' + userName);
+        if (healtQ11 == 'Нет'|| healtQ11 == 'нет') {
+           let healtQ12 = prompt (userName + ', Вы занимаетесь спортом?');
+            if (healtQ12 == 'Нет' || healtQ12 == 'нет') {
+                alert ('Берегите себя!');
+            }     else if (healtQ12 == 'Да' || healtQ12 == 'да') {
+                alert ('Вы молодец!');
+            }  else if (healtQ12 == '' || healtQ12 == null) {
+                alert ('Отменено'); 
+            }
+
+        } else if (userName == '' || userName == null )   {
+            alert ("Отмена");
+        } else {
+    alert ('Я вас не знаю');
+    }
+
+        
+        
+        </script>   
+</body>
+</html>

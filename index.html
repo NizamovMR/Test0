@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,7 +7,27 @@
     <title>Document</title>
 </head>
 <body>
-   
-    
+    <script>
+        "use strict";
+        
+        let userName = prompt ('Кто там', '' );
+        
+        if (userName == 'Админ') {
+           let pass = prompt ( 'Пароль?', '' );
+            if (pass == 'Я главный') {
+                alert ('Здравствуйте!');
+            }  else if (pass == '' || pass == null || pass !== 'Я главный') {
+                alert ('Неверный пароль'); 
+            }
+
+        } else if (userName == '' || userName == null )   {
+            alert ("Отмена");
+        } else {
+    alert ('Я вас не знаю');
+    }
+
+        
+        
+        </script>   
 </body>
 </html>
